@@ -1,0 +1,65 @@
+html {
+    font-family: "Helvetica";
+    text-align: center;
+}
+
+.appAll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("./devin-avery.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    display: block;
+    overflow: auto;
+}
+
+#appName{
+    width:100vw;
+    background-color: rgba(255,255,255,0.1);
+    padding:10px;
+}
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 6px;
+    color:white;
+}
+
+h3 {
+    color: rgba(0,0,0,0.4);
+    margin-top: -30px;
+}
+
+button {
+    margin-top: 40px;
+    height: 60px;
+    width: 130px;
+    border-radius: 20px;
+    background-color:rgba(255,255,255,0.3);
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,0.4);
+    color:gray;
+    font-size:14px;
+    font-weight:bold;
+}
+
+button:hover{
+    background-color:rgba(255,255,255,0.6);
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+button:active{
+    background-color:rgba(255,255,255,0.8);
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,0);
+    transition:.2s linear;
+}
+
+button:focus{
+    outline:0;
+}
