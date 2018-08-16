@@ -50,21 +50,21 @@ html {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    /* background-position: bottom center; */
     background-size: cover;
     display: block;
     overflow: auto;
-    -webkit-animation: FADE_IN 1s linear;
+    -webkit-animation: FADE_IN 1.2s linear;
     /* Safari 4+ */
-    -moz-animation: FADE_IN 1s linear;
+    -moz-animation: FADE_IN 1.2s linear;
     /* Fx 5+ */
-    -o-animation: FADE_IN 1s linear;
+    -o-animation: FADE_IN 1.2s linear;
     /* Opera 12+ */
-    animation: FADE_IN 1s linear;
+    animation: FADE_IN 1.2s linear;
     /* IE 10+, Fx 29+ */
 }
 
-}
+
 
 #appName {
     width: 100vw;
@@ -76,7 +76,7 @@ h1 {
     font-size: 50px;
     letter-spacing: 6px;
     color: white;
-    margin-top:12px;
+    margin-top: 12px;
 }
 
 h3 {
@@ -98,7 +98,7 @@ button {
     font-size: 14px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
-    letter-spacing:2px;
+    letter-spacing: 2px;
     text-decoration: none;
     border: .5px gray solid;
 }

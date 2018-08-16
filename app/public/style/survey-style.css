@@ -1,0 +1,178 @@
+* {
+    font-family: "Helvetica";
+    /* text-align: center; */
+}
+
+.appAll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("./beach.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    overflow: auto;
+    -webkit-animation: FADE_IN 1.2s linear;
+    /* Safari 4+ */
+    -moz-animation: FADE_IN 1.2s linear;
+    /* Fx 5+ */
+    -o-animation: FADE_IN 1.2s linear;
+    /* Opera 12+ */
+    animation: FADE_IN 1.2s linear;
+    /* IE 10+, Fx 29+ */
+}
+
+#survey-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+@media only screen and (max-width:760px) {
+    #survey-wrap {
+        width: 80%;
+    }
+}
+
+.question-wrap {
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:760px) {
+    .question-wrap {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.questions {
+    margin-left: 50px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: rgb(108, 100, 122);
+    font-weight: bold;
+}
+
+@media only screen and (max-width:760px) {
+    .questions {
+        margin-left: 10px;
+    }
+}
+
+select {
+    margin-top: -5px;
+    width: 40px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width:760px) {
+    select {
+        margin-left: 10px;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:760px) {
+    form {
+        width: 80%;
+    }
+}
+
+label {
+    margin-top: 30px;
+    color: rgb(108, 100, 122);
+}
+
+input {
+    border-radius: 4px;
+    height: 30px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+#about-you {
+    font-weight: bold;
+    color: rgb(68, 61, 80);
+    font-size: 50px;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#submit-button {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    color: rgb(68, 61, 80);
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: .5px gray solid;
+    text-transform:uppercase;
+}
+
+#submit-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#submit-button:active {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0);
+    transition: .2s linear;
+}
+
+#submit-button:focus {
+    outline: 0;
+}
+
+a {
+    color: white;
+}
+
+#link-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#name-footer {
+    color: white;
+    margin-left: 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
