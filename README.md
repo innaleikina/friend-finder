@@ -1,5 +1,5 @@
 # friend-finder
-Friend Finder is a full stack app that matches a user to a friend based on the answers survey answers the user provides. 
+Friend Finder is a full stack app that matches a user to a friend based on the  survey answers the user provides. 
 
 # technologies used
 - HTML CSS
