@@ -31,9 +31,6 @@ populateQuestions();
 //ON FORM SUBMIT 
 //=========================   
 $("#submit-button").on("click", function (event) {
-
-    
-  
     event.preventDefault();
 
     var answersUserArr = [];
@@ -55,15 +52,15 @@ $("#submit-button").on("click", function (event) {
 
     console.log(newFriend);
     getData(answersUserArr);
-    
-    if( newFriend.name.length > 0 && newFriend.image.length > 0){
+
+    if (newFriend.name.length > 0 && newFriend.image.length > 0) {
         postNewUser(newFriend)
         displayModal();
-     } else {
+    } else {
         alert("Please add your name and image");
-     } 
+    }
 
- 
+
 })
 
 
@@ -108,8 +105,8 @@ function getData(userAnswerData) {
             matchImage = friendsData[index].image;
             console.log(" match img : " + matchImage)
 
-    
-            $("#result-name-wrap").append('<h4 id="matchName">' + matchName +  '</h4>');
+
+            $("#result-name-wrap").append('<h4 id="matchName">' + matchName + '</h4>');
             $("#result-image-wrap").append('<img id="matchImg" src="' + matchImage + '" />');
         })
 }
@@ -119,7 +116,7 @@ function getData(userAnswerData) {
 //=========================  
 
 function postNewUser(newObj) {
-    $.post("/api/friends", newObj,);
+    $.post("/api/friends", newObj, );
     $("#name-input").val("");
     $("#photo-input").val("");
 }
@@ -128,15 +125,17 @@ function postNewUser(newObj) {
 //DISPLAY RESULT
 //=========================  
 
-function displayModal(){
-$("#result").css("display","block");
+function displayModal() {
+    $("#result").css("display", "block");
 }
 
 //=========================
 //CLOSE MODAL
 //=========================  
 
-$("#close-modal").on("click", function(event){
+$("#close-modal").on("click", function (event) {
     event.preventDefault();
-    $("#result").css("display","none");
+    $("#result").css("display", "none");
+    $("#result-name-wrap").empty();
+    $("#result-image-wrap").empty();
 })
