@@ -141,7 +141,7 @@ input:focus {
     letter-spacing: 2px;
     text-decoration: none;
     border: .5px gray solid;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 #submit-button:hover {
@@ -175,4 +175,53 @@ a {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 12px;
+}
+
+#result {
+    width: 80vw;
+    height: 60vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: rgba(61, 56, 129, 0.9);
+    flex-direction: column;
+    display: none;
+}
+
+#matchImg {
+    width: 25%;
+    height: 25%;
+    /* border: 1px red solid; */
+    margin: auto auto;
+    display: block;
+}
+
+#matchName {
+    color: white;
+    text-align: center;
+}
+
+#header-result {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#close-modal {
+    color: rgb(255, 255, 255);
+    /* right:0; */
+    font-size: 20px;
+    border: 1px white solid;
+    padding: 5px;
+    margin-right: 0%;
+    width: 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 5px;
+    position: absolute;
+    right: 0;
+    cursor:pointer;
 }

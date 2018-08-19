@@ -12,8 +12,15 @@
 
 <body>
     <div class="appAll">
-        <!-- <div id="title"> SURVEY </div>
-        <p id="directions"> answer a few questions to find your match </p> -->
+        <div id="result">
+                <div id="close-modal"> X </div>
+          <h1 id="header-result"> your new friend is: </h1>
+  
+          <div id="result-name-wrap"></div>
+          <div id="result-image-wrap"></div>
+        </div>
+
+
         <div id="user-info">
 
             <p id="about-you">About You</p>
@@ -21,12 +28,12 @@
                 <label>
                     Name (required)
                 </label>
-                <input>
+                <input id="name-input" required>
 
                 <label>
                     Link to Photo (required)
                 </label>
-                <input>
+                <input id="photo-input" required>
             </form>
         </div>
         <div id="survey-wrap">
@@ -35,8 +42,8 @@
 
         <footer id="footer">
             <div id="link-footer">
-                <a href="#"> api friends list </a>
-                <a href="#"> GitHub Repo </a>
+                <a href="/api/friends"> api friends list </a>
+                <a href="https://github.com/innaleikina/friend-finder" target="_blank"> GitHub Repo </a>
             </div>
             <p id="name-footer"> made by Inna Leikina</p>
 
@@ -45,6 +52,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="survey.js"></script>
+
+    <script type="text/javascript">
+     
+    </script>
+
 </body>
 
 </html>
