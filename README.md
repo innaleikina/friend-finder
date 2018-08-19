@@ -3,7 +3,7 @@ Friend Finder is a full stack app that matches a user to a friend based on the a
 
 # technologies used
 - HTML CSS
--jQuery
+- jQuery
 - Express npm
 - body-parser npm
 - path npm
